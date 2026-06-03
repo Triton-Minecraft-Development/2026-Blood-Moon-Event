@@ -6,5 +6,7 @@
       "max_inclusive": 88
     },
     "description": "PvE Blood Moon Event",
+    "min_format": 71,
+    "max_format": 88
   }
 }
