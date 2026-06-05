@@ -1,1 +1,2 @@
-
+execute as @a if items entity @s container.* minecraft:elytra at @s summon minecraft:lightning_bolt run damage @p 10000
+execute as @a if items entity @s container.* minecraft:mace at @s summon minecraft:lightning_bolt run damage @p 10000
