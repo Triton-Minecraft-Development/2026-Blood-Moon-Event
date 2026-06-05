@@ -1,1 +1,1 @@
-execute if score @n[type=minecraft:armor_stand] X matches 1..10000 run scoreboard players operation @e[type=minecraft:armor_stand] X -= OzempicOmar Y
+
