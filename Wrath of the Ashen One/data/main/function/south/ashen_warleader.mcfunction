@@ -1,3 +1,4 @@
+scoreboard players set @n[type=minecraft:acacia_chest_boat] X 0 
 execute store result score @n[type=minecraft:acacia_chest_boat] X run random roll 1..9
 
 execute if score @n[type=minecraft:acacia_chest_boat] X matches 1 run execute at @n[type=minecraft:acacia_chest_boat] run summon zombie ^ ^5 ^ {equipment:{mainhand:{count:1,id:diamond_sword},head:{count:1,id:skeleton_skull},chest:{count:1,id:netherite_chestplate},legs:{count:1,id:netherite_leggings},feet:{count:1,id:netherite_boots}},CustomName:"Ashen Warleader"}
