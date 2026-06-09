@@ -1,0 +1,1 @@
+advancement revoke @s only alex_things:attribute_upgrader/ironskin

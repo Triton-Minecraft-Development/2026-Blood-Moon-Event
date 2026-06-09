@@ -1,0 +1,2 @@
+$execute as @e[tag=tmc.dev.summoned_entity] if items entity @s weapon.mainhand * run item modify entity @s weapon.mainhand {function:"set_enchantments",enchantments:{"alex_things:additional_damage":$(value)}}
+$execute as @e[tag=tmc.dev.summoned_entity] unless items entity @s weapon.mainhand * run item replace entity @s weapon.mainhand with test_block[item_model="air",enchantments={"alex_things:additional_damage":$(value)}]

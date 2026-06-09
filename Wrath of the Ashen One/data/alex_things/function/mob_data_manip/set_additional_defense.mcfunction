@@ -1,0 +1,2 @@
+$execute as @s if items entity @s saddle * run item modify entity @s saddle {function:"set_enchantments",enchantments:{"alex_things:additional_defense":$(value)}}
+$execute as @s unless items entity @s saddle !* run item replace entity @s saddle with test_block[item_model="air",enchantments={"alex_things:additional_defense":$(value)}]

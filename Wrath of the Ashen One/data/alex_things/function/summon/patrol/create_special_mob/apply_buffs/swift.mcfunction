@@ -1,0 +1,4 @@
+item replace entity @s armor.feet with golden_boots[unbreakable={},dyed_color=16711680,trim={material:diamond,pattern:silence},attribute_modifiers=[{amount:3,id:"tmc.dev.mob.feet.armor",operation:"add_value",type:"armor",slot:"feet"}]]
+item replace entity @s weapon.mainhand with iron_sword[attribute_modifiers=[{amount:4,id:"tmc.dev.mob.attack_damage",operation:"add_value",type:"attack_speed",slot:"any"},{amount:2,id:"tmc.dev.mob.attack_damage",operation:"add_value",type:"attack_damage",slot:"any"}],item_name={"text":"Swift Blade",color:"gold",italic:false}]
+
+effect give @s speed infinite 3 true

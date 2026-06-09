@@ -1,0 +1,1 @@
+effect give @s strength infinite 4 true

@@ -1,0 +1,1 @@
+execute at @e[tag=tmc.dev.util_entity.center_wave_marker] unless entity @e[tag=tmc.dev.util_entity.wave_marker,limit=1] run summon marker ~ ~ ~ {Tags:["tmc.dev.util_entity","tmc.dev.util_entity.wave_marker"]}

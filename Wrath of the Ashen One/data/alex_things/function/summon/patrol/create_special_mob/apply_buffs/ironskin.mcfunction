@@ -1,0 +1,2 @@
+item replace entity @s armor.head with minecraft:player_head[minecraft:custom_name={text:"Bomb",color:"gold",underlined:true,bold:true,italic:false},profile={properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTc2YTI4MTFkMWUxNzZhMDdiNmQwYTY1N2I5MTBmMTM0ODk2Y2UzMDg1MGY2ZTgwYzdjODM3MzJkODUzODFlYSJ9fX0="}]}] 1
+item replace entity @s weapon.mainhand with gunpowder[custom_name={text:"Fuse",color:"gold",underlined:true,bold:true,italic:false},death_protection={}]

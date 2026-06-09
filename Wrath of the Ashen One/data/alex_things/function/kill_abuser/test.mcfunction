@@ -1,0 +1,1 @@
+$tag $(target_player) add tmc.dev.kill_abuser.killed

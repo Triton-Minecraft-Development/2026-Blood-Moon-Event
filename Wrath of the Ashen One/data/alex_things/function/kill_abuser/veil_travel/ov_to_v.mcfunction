@@ -1,0 +1,1 @@
+$execute in alex_things:the_veil run tp @s $(x) 42 $(z)
