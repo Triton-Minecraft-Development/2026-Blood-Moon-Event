@@ -1,0 +1,1093 @@
+{
+  "sea_level": 0,
+  "disable_mob_generation": false,
+  "ore_veins_enabled": false,
+  "aquifers_enabled": false,
+  "legacy_random_source": false,
+  "default_block": {
+    "Name": "minecraft:black_concrete"
+  },
+  "default_fluid": {
+    "Name": "minecraft:air"
+  },
+  "spawn_target": [],
+  "noise": {
+    "min_y": -32,
+    "height": 128,
+    "size_horizontal": 1,
+    "size_vertical": 1
+  },
+  "noise_router": {
+    "barrier": 0,
+    "fluid_level_floodedness": 0,
+    "fluid_level_spread": 0,
+    "lava": 0,
+    "vein_toggle": 0,
+    "vein_ridged": 0,
+    "vein_gap": 0,
+    "temperature": {
+      "type": "noise",
+      "noise": "alex_things:temperaturenoise",
+      "xz_scale": 1,
+      "y_scale": 0
+    },
+    "vegetation": 0,
+    "continents": 0,
+    "erosion": 0,
+    "depth": 0,
+    "ridges": 0,
+    "preliminary_surface_level": 0,
+    "final_density": {
+      "type": "y_clamped_gradient",
+      "from_y": -16,
+      "to_y": 100,
+      "from_value": 1.1,
+      "to_value": -1.1
+    }
+  },
+  "surface_rule": {
+    "type": "sequence",
+    "sequence": [
+      {
+        "type": "condition",
+        "if_true": {
+          "type": "biome",
+          "biome_is": [
+            "alex_things:soulflow_shore"
+          ]
+        },
+       "then_run": {
+          "type": "sequence",
+          "sequence": [
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "minecraft:vertical_gradient",
+                "true_at_and_below": {
+                  "above_bottom": 10
+                },
+                "random_name": "",
+                "false_at_and_above": {
+                  "above_bottom": 10
+                }
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "minecraft:pearlescent_froglight"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "minecraft:vertical_gradient",
+                "true_at_and_below": {
+                  "above_bottom": 2
+                },
+                "random_name": "",
+                "false_at_and_above": {
+                  "above_bottom": 2
+                }
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "minecraft:pearlescent_froglight"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 0,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "white_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 1,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 2,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "white_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 3,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 4,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "white_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 5,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 6,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "white_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 7,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 8,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "white_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 9,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 10,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "white_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 20,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 21,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "white_stained_glass"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "condition",
+        "if_true": {
+          "type": "biome",
+          "biome_is": [
+            "alex_things:soulflow"
+          ]
+        },
+        "then_run": {
+          "type": "sequence",
+          "sequence": [
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "minecraft:vertical_gradient",
+                "true_at_and_below": {
+                  "above_bottom": 10
+                },
+                "random_name": "",
+                "false_at_and_above": {
+                  "above_bottom": 10
+                }
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "minecraft:pearlescent_froglight"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "minecraft:vertical_gradient",
+                "true_at_and_below": {
+                  "above_bottom": 2
+                },
+                "random_name": "",
+                "false_at_and_above": {
+                  "above_bottom": 2
+                }
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "minecraft:pearlescent_froglight"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 0,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "light_gray_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 1,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 2,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "light_gray_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 3,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 4,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "light_gray_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 5,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 6,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "light_gray_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 7,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 8,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "light_gray_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 9,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 10,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "light_gray_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 20,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 21,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "light_gray_stained_glass"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "condition",
+        "if_true": {
+          "type": "biome",
+          "biome_is": [
+            "alex_things:soulflow_shore"
+          ]
+        },
+        "then_run": {
+          "type": "sequence",
+          "sequence": [
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "minecraft:vertical_gradient",
+                "true_at_and_below": {
+                  "above_bottom": 10
+                },
+                "random_name": "",
+                "false_at_and_above": {
+                  "above_bottom": 10
+                }
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "minecraft:pearlescent_froglight"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "minecraft:vertical_gradient",
+                "true_at_and_below": {
+                  "above_bottom": 2
+                },
+                "random_name": "",
+                "false_at_and_above": {
+                  "above_bottom": 2
+                }
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "minecraft:pearlescent_froglight"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 0,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "gray_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 1,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 2,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "gray_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 3,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 4,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "gray_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 5,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 6,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "gray_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 7,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 8,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "gray_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 9,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 10,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "gray_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 20,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 21,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "gray_stained_glass"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "condition",
+        "if_true": {
+          "type": "biome",
+          "biome_is": [
+            "alex_things:abyss"
+          ]
+        },
+        "then_run": {
+          "type": "sequence",
+          "sequence": [
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "minecraft:vertical_gradient",
+                "true_at_and_below": {
+                  "above_bottom": 1
+                },
+                "random_name": "",
+                "false_at_and_above": {
+                  "above_bottom": 1
+                }
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "minecraft:black_concrete"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "minecraft:vertical_gradient",
+                "true_at_and_below": {
+                  "above_bottom": 2
+                },
+                "random_name": "",
+                "false_at_and_above": {
+                  "above_bottom": 2
+                }
+              },
+              "then_run": {
+                "type": "minecraft:block",
+                "result_state": {
+                  "Name": "minecraft:black_concrete"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 0,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "black_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 1,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 2,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "black_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 3,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 4,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "black_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 5,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 6,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "black_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 7,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 8,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "black_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 9,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 10,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "black_stained_glass"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 20,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "air"
+                }
+              }
+            },
+            {
+              "type": "condition",
+              "if_true": {
+                "type": "stone_depth",
+                "surface_type": "floor",
+                "offset": 21,
+                "add_surface_depth": false,
+                "secondary_depth_range": 0
+              },
+              "then_run": {
+                "type": "block",
+                "result_state": {
+                  "Name": "black_stained_glass"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

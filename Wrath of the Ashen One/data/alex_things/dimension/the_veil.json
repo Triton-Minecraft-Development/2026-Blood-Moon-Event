@@ -1,0 +1,84 @@
+{
+    "type": "alex_things:the_veil",
+    "generator": {
+        "type": "minecraft:noise",
+        "biome_source": {
+            "type": "minecraft:multi_noise",
+            "biomes": [
+               {
+                "parameters": {
+                    "temperature": 0.25,
+                    "humidity": -0.25,
+                    "weirdness": 0.12,
+                    "offset": 0.0,
+                    "continentalness": 0.0,
+                    "depth": 0.0,
+                    "erosion": 0.0
+                },
+                "biome": "alex_things:abyss"
+                },
+                {
+                "parameters": {
+                    "temperature": 0.275,
+                    "humidity": -0.275,
+                    "weirdness": 0.11,
+                    "offset": 0.0,
+                    "continentalness": 0.0,
+                    "depth": 0.0,
+                    "erosion": 0.0
+                },
+                "biome": "alex_things:soulflow_shore"
+                },
+                {
+                "parameters": {
+                    "temperature": 0.3,
+                    "humidity": -0.3,
+                    "weirdness": 0.1,
+                    "offset": 0.0,
+                    "continentalness": 0.0,
+                    "depth": 0.0,
+                    "erosion": 0.0
+                },
+                "biome": "alex_things:soulflow"
+                },
+                {
+                "parameters": {
+                    "temperature": 0.315,
+                    "humidity": -0.315,
+                    "weirdness": 0.11,
+                    "offset": 0.0,
+                    "continentalness": 0.0,
+                    "depth": 0.0,
+                    "erosion": 0.0
+                },
+                "biome": "alex_things:soulflow"
+                },
+                {
+                "parameters": {
+                    "temperature": 0.325,
+                    "humidity": -0.325,
+                    "weirdness": 0.11,
+                    "offset": 0.0,
+                    "continentalness": 0.0,
+                    "depth": 0.0,
+                    "erosion": 0.0
+                },
+                "biome": "alex_things:soulflow_shore"
+                },
+                {
+                "parameters": {
+                    "temperature": 0.35,
+                    "humidity": -0.35,
+                    "weirdness": 0.12,
+                    "offset": 0.0,
+                    "continentalness": 0.0,
+                    "depth": 0.0,
+                    "erosion": 0.0
+                },
+                "biome": "alex_things:abyss"
+                }
+            ]
+        },
+        "settings": "alex_things:veilsettings"
+    }
+}

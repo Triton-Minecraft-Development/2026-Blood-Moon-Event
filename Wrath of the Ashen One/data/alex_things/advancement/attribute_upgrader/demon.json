@@ -1,0 +1,24 @@
+{
+  "criteria": {
+    "meow": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "components": {
+            "minecraft:custom_data": {
+              "attribute_upgrade": "scale"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "meow"
+    ]
+  ],
+  "rewards": {
+    "function": "alex_things:advancement/attribute_upgrader/demon"
+  }
+}

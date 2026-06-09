@@ -1,0 +1,35 @@
+{
+  "attributes": {
+    "minecraft:gameplay/can_start_raid": false,
+    "minecraft:gameplay/cat_waking_up_gift_chance": 0,
+    "minecraft:gameplay/bed_rule": {
+      "modifier": "override",
+      "argument": {
+        "can_sleep": "never",
+        "can_set_spawn": "never",
+        "explodes": true,
+        "error_message": {
+          "text": ""
+        }
+      }
+    },
+    "minecraft:gameplay/creaking_active": true,
+    "minecraft:gameplay/eyeblossom_open": false,
+    "minecraft:gameplay/respawn_anchor_works": false,
+    "minecraft:visual/cloud_color": 0,
+    "minecraft:visual/sky_color": 0
+  },
+  "has_skylight": false,
+  "has_ceiling": false,
+  "coordinate_scale": 1,
+  "ambient_light": 0,
+  "has_fixed_time": true,
+  "logical_height": 0,
+  "skybox": "none",
+  "cardinal_light": "default",
+  "infiniburn": "#minecraft:infiniburn_end",
+  "min_y": 0,
+  "height": 320,
+  "monster_spawn_light_level": 0,
+  "monster_spawn_block_light_limit": 0
+}

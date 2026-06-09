@@ -1,0 +1,41 @@
+{
+  "attributes": {
+    "minecraft:audio/ambient_sounds": {
+      "loop": {
+        "sound_id": "minecraft:ambient.the_veil.loop"        
+      },
+      "mood": {
+        "block_search_extent": 8,
+        "offset": 2,
+        "sound": "minecraft:ambient.basalt_deltas.mood",
+        "tick_delay": 6000
+      }
+    },
+    "minecraft:visual/fog_color": 1315860,
+    "minecraft:visual/sky_color": 1315860,
+    "minecraft:visual/water_fog_color": 1315860,
+    "minecraft:visual/ambient_particles": {
+      "modifier": "override",
+      "argument": [
+        {
+          "particle": {
+            "type": "minecraft:white_ash"
+          },
+          "probability": 0.1
+        }
+      ]
+    }
+  },
+  "temperature_modifier": "none",
+  "carvers": [],
+  "downfall": 0.4,
+  "effects": {
+    "water_color": 1315860,
+    "grass_color": 4473924
+  },
+  "features": [],
+  "has_precipitation": false,
+  "spawn_costs": {},
+  "spawners": {},
+  "temperature": 2
+}
