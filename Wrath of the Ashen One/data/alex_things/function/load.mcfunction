@@ -41,7 +41,7 @@ scoreboard players set #global tmc.dev.wave.patrol.mobs_per_group.set 11
 scoreboard players set #global tmc.dev.wave.patrol.special_mobs_per_group.set 1
 scoreboard players set #global tmc.dev.wave.global.max_patrols.set 6
 scoreboard players set #global tmc.dev.wave.patrol.should_be_custom 1
-scoreboard players set #global tmc.dev.wave.patrol.custom_amount 2
+scoreboard players set #global tmc.dev.wave.patrol.custom_amount 5
 
 team add tmc.dev.special_mob
 team modify tmc.dev.special_mob color dark_red
