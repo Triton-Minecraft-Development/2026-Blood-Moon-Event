@@ -12,9 +12,11 @@ $execute at $(target_player) as @n[type=armor_stand,tag=tmc.dev.util_entity] run
 
 $execute at $(target_player) run summon lightning_bolt ~ ~ ~
 
-
 $tag $(target_player) add tmc.dev.kill_abuser.killed
 
 playsound item.trident.thunder master @a
 playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1 0
 playsound entity.wither.death master @a ~ ~ ~ 0.4 0.7
+
+$clear $(target_player) elytra
+$clear $(target_player) mace
