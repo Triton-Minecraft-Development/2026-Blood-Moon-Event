@@ -34,7 +34,7 @@ scoreboard objectives add tmc.dev.wave.global.max_patrols.read dummy
 
 
 #these are dummy values so that I can actually test set them when you figure out this stuff
-scoreboard players set #global tmc.dev.wave.global.radius.set 50
+scoreboard players set #global tmc.dev.wave.global.radius.set 80
 scoreboard players set #global tmc.dev.wave.global.spread.set 20
 scoreboard players set #global tmc.dev.wave.patrol.spread.set 10
 scoreboard players set #global tmc.dev.wave.patrol.mobs_per_group.set 11

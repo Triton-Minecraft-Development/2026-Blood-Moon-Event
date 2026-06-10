@@ -3,7 +3,8 @@
 team join tmc.dev.special_mob @s
 execute as @s run effect give @s glowing infinite 0 true
 
-execute store result score #global tmc.dev.random run random value 5..13
+execute store result score #global tmc.dev.random run random value 4..14
+
 
 execute if score #global tmc.dev.random matches 4 run data modify storage tmc.dev:storage entity_name_prefix set value "Demon"
 execute if score #global tmc.dev.random matches 5 run data modify storage tmc.dev:storage entity_name_prefix set value "Savage"
@@ -17,6 +18,8 @@ execute if score #global tmc.dev.random matches 10 run data modify storage tmc.d
 execute if score #global tmc.dev.random matches 11 run data modify storage tmc.dev:storage entity_name_prefix set value "Swift"
 execute if score #global tmc.dev.random matches 12 run data modify storage tmc.dev:storage entity_name_prefix set value "Hasty"
 execute if score #global tmc.dev.random matches 13 run data modify storage tmc.dev:storage entity_name_prefix set value "Fleetfooted"
+
+execute if score #global tmc.dev.random matches 4..14 as @s run function alex_things:summon/patrol/create_special_mob/mob_list_apply/leader/ashen_knight
 
 tag @s add tmc.dev.special_mob
 

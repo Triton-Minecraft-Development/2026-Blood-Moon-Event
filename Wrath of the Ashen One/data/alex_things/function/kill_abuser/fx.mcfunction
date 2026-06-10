@@ -2,7 +2,7 @@ $damage $(target_player) 10000 alex_things:sin
 $damage $(target_player) 10000 alex_things:sin
 $damage $(target_player) 10000 alex_things:sin
 
-$tellraw @a {text:"☠ $(target_player) was killed for their hubris",color:"dark_red"}
+tellraw @a {text:"☠ A rule-breaker was killed for their hubris",color:"dark_red"}
 
 $execute at $(target_player) run summon armor_stand ~ ~1 ~ {Marker:1b, Invisible:1b, Tags:["tmc.dev.util_entity"]}
 $execute at $(target_player) as @n[type=armor_stand,tag=tmc.dev.util_entity] at @s run tp @s ~ ~ ~ facing ~ ~-100 ~

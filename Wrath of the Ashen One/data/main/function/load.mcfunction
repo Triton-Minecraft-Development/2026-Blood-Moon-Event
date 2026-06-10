@@ -1,3 +1,5 @@
+function main:dispose
+
 scoreboard objectives add X dummy
 scoreboard objectives add Deaths deathCount
 scoreboard objectives add total_death trigger
