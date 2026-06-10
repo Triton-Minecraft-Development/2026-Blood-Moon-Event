@@ -15,6 +15,7 @@ worldborder set 200
 # coords of triton town fountain
 tp @a 99 69 296
 gamemode adventure @a
+gamerule keep_inventory true
 
 playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 1 0 1
 playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 1 0 1
@@ -23,8 +24,11 @@ playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 1 0 1
 playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 1 0 1
 playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 1 0 1
 
+# summon marker for wave center reference point
+summon marker 99 69 303 {Tags:["tmc.dev.wave_center"]}
+
 # spawn first wave
-function alex_things:summon/wave/init {type:piglin,name:"Minion"}
+function main:wave_spawning/wave1
 
 tellraw @a {"color":"dark_red","text":"The gates of the nether have opened..."}
 

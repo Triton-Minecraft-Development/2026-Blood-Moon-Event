@@ -1,0 +1,1 @@
+execute as @e[tag=tmc.dev.wave_center] run function alex_things:summon/wave/init {type:lightning_bolt,name:""}

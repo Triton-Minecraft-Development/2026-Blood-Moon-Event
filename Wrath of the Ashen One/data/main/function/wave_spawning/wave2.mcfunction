@@ -1,0 +1,2 @@
+execute as @e[tag=tmc.dev.wave_center] run function alex_things:summon/wave/init {type:piglin_brute,name:""}
+execute as @e[tag=tmc.dev.wave_center] run function alex_things:summon/wave/init {type:piglin_brute,name:""}
