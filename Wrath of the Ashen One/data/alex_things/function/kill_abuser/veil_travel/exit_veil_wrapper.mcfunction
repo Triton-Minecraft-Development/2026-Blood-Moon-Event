@@ -1,0 +1,1 @@
+execute as @a[limit=1,nbt={Dimension:"alex_things:the_veil"}] run function alex_things:kill_abuser/veil_travel/exit_veil

@@ -14,7 +14,10 @@ setblock -18 -59 0 minecraft:redstone_block
 # coords of triton town fountain
 worldborder center 99 303
 worldborder set 200
+
 tp @a 99 69 296
+spawnpoint @a 99 69 296
+setworldspawn 99 69 296
 
 gamemode adventure @a
 gamerule keep_inventory true
