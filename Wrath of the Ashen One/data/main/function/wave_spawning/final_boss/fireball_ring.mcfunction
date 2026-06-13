@@ -1,0 +1,8 @@
+$summon minecraft:fireball ~$(hBuffer) ~$(vBuffer) ~ {Motion:[$(h)d,$(v)d,0.0d],ExplosionPower:$(pow),Tags:["tmc.dev.surtr_boss_fireball","tmc.dev.surtr_boss_subpart"]}
+$summon minecraft:fireball ~-$(hBuffer) ~$(vBuffer) ~ {Motion:[-$(h)d,$(v)d,0.0d],ExplosionPower:$(pow),Tags:["tmc.dev.surtr_boss_fireball","tmc.dev.surtr_boss_subpart"]}
+$summon minecraft:fireball ~ ~$(vBuffer) ~$(hBuffer) {Motion:[0.0d,$(v)d,$(h)d],ExplosionPower:$(pow),Tags:["tmc.dev.surtr_boss_fireball","tmc.dev.surtr_boss_subpart"]}
+$summon minecraft:fireball ~ ~$(vBuffer) ~-$(hBuffer) {Motion:[0.0d,$(v)d,-$(h)d],ExplosionPower:$(pow),Tags:["tmc.dev.surtr_boss_fireball","tmc.dev.surtr_boss_subpart"]}
+$summon minecraft:fireball ~$(hBuffer) ~$(vBuffer) ~$(hBuffer) {Motion:[$(h)d,$(v)d,$(h)d],ExplosionPower:$(pow),Tags:["tmc.dev.surtr_boss_fireball","tmc.dev.surtr_boss_subpart"]}
+$summon minecraft:fireball ~$(hBuffer) ~$(vBuffer) ~-$(hBuffer) {Motion:[$(h)d,$(v)d,-$(h)d],ExplosionPower:$(pow),Tags:["tmc.dev.surtr_boss_fireball","tmc.dev.surtr_boss_subpart"]}
+$summon minecraft:fireball ~-$(hBuffer) ~$(vBuffer) ~$(hBuffer) {Motion:[-$(h)d,$(v)d,$(h)d],ExplosionPower:$(pow),Tags:["tmc.dev.surtr_boss_fireball","tmc.dev.surtr_boss_subpart"]}
+$summon minecraft:fireball ~-$(hBuffer) ~$(vBuffer) ~-$(hBuffer) {Motion:[-$(h)d,$(v)d,-$(h)d],ExplosionPower:$(pow),Tags:["tmc.dev.surtr_boss_fireball","tmc.dev.surtr_boss_subpart"]}

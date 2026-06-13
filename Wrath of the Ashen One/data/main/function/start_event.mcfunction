@@ -23,6 +23,9 @@ gamemode adventure @a
 gamerule keep_inventory true
 gamerule universal_anger true
 
+#spawn sky portal
+function main:fx/sky_portal
+
 playsound minecraft:block.end_portal.spawn master @a ~ ~ ~ 1 0 1
 playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 1 0 1
 playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 1 0 1
@@ -31,7 +34,6 @@ playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 1 0 1
 playsound entity.lightning_bolt.thunder master @a ~ ~ ~ 1 0 1
 
 # summon marker for wave center reference point
-kill @e[tag=tmc.dev.event_center]
 summon marker 99 69 303 {Tags:["tmc.dev.event_center"]}
 
 # spawn first wave

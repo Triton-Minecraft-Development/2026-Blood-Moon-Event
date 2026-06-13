@@ -1,0 +1,2 @@
+summon spawner_minecart 93 69 303 {Invulnerable:1b,Tags:["tmc.dev.lightning_spawner"],SpawnCount:30,SpawnRange:200,MaxNearbyEntities:5000,RequiredPlayerRange:1000,Delay:0,MinSpawnDelay:0,MaxSpawnDelay:0,SpawnPotentials:[{data:{entity:{id:"minecraft:lightning_bolt"}},weight:1}]}
+schedule function main:fx/on_lightning_storm 0.5s
